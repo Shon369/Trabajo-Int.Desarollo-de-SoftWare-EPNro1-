@@ -25,7 +25,7 @@ while [ "$continuar" == "si" ]; do
 		;;
 		3)
 		if [ -f "EPNro1/salida/$FILENAME.txt" ]; then
-			awk '{print $1,$2,$3,$4,$5}' EPNro1/salida/$FILENAME.txt | sort -n
+			awk '{print $0}' EPNro1/salida/$FILENAME.txt | sort -n
 		fi
 		;;
 		4)
